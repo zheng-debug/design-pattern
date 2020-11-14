@@ -2,6 +2,11 @@ package com.design.designpattern.javaOberverPattern;
 
 import java.util.Observable;
 
+/**
+ * 继承被观察者类，超类中已经完成了对观察者的管理
+ * 当调用setMeasurements()方法后，会更改是否改变的boolean值，
+ * 同时调用notifyObservers()方法，通知观察者更新数据。
+ */
 public class WeatherData extends Observable {
 
     private float a1;
