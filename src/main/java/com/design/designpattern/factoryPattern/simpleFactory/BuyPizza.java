@@ -6,5 +6,6 @@ public class BuyPizza{
         SimplePizzaFactory simplePizzaFactory = new SimplePizzaFactory();
         PizzaStore pizzaStore = new PizzaStore();
         Pizza pizza = pizzaStore.orderPizza("Veggie");
+        System.out.println("简单工厂模式");
     }
 }
