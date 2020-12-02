@@ -9,7 +9,7 @@ public class NewYorkPizzaStore extends PizzaStore {
         if ("NewYorkCheesPizza".equals(type)){
             return new CheesPizza(pizzaIngredientFactory);
         }else {
-            return new OriginalPizza();
+            return new OriginalPizza(pizzaIngredientFactory);
         }
     }
 }

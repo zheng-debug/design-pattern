@@ -8,7 +8,7 @@ public class ChicagoPizzaStore extends PizzaStore {
         if ("ChicagoClam".equals(type)){
             return new CheesPizza(pizzaIngredientFactory);
         }else {
-            return new OriginalPizza();
+            return new OriginalPizza(pizzaIngredientFactory);
         }
     }
 }
