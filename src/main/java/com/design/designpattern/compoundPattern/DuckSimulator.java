@@ -1,10 +1,6 @@
 package com.design.designpattern.compoundPattern;
 
 
-import com.design.designpattern.strategyPattern.Quack;
-
-import java.util.Observable;
-
 /**
  * 鸭子模拟器
  */
