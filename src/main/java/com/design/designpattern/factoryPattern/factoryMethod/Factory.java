@@ -9,7 +9,7 @@ package com.design.designpattern.factoryPattern.factoryMethod;
  *      定义了一个创建对象的接口，但由子类决定实例化的类是哪一个，
  *      工厂方法让类把实例化的过程推迟到子类。
  */
-public abstract class PizzaStore {
+public abstract class Factory {
 
     /**
      * 工厂方法-用于处理对象的创建，并将这样的行为封装在子类中，这样就可以使超类中的代码与子类中对象的创建解耦。
@@ -17,11 +17,5 @@ public abstract class PizzaStore {
      * 工厂方法必须返回一个产品类型
      * 工厂方法可以根据实际情况判断是否需要参数。
      */
-    public abstract Pizza createPizza(String type);
-
-    public Pizza orderPizza(String type){
-        Pizza pizza;
-        pizza = createPizza(type);
-        return pizza;
-    }
+    public abstract Product creteProduct();
 }
